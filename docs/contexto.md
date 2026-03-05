@@ -1,14 +1,14 @@
 # Introdução
 
-Eventos hidrometeorológicos extremos têm se intensificado nas últimas décadas, especialmente na região Sudeste do Brasil, provocando impactos sociais, econômicos e ambientais significativos. No estado de Minas Gerais, municípios da Zona da Mata apresentam histórico recorrente de enchentes e alagamentos associados a episódios de precipitação intensa. 
+Eventos hidrometeorológicos extremos têm se intensificado nas últimas décadas, especialmente na região Sudeste do Brasil, provocando impactos sociais, econômicos e ambientais significativos. No estado de Minas Gerais, municípios da Zona da Mata apresentam histórico recorrente de enchentes e alagamentos associados a episódios de precipitação intensa.
  
-Diante desse cenário, este projeto propõe o desenvolvimento de um modelo preditivo baseado em técnicas de Machine Learning para estimar o risco de ocorrência de eventos de inundação em dez municípios da Zona da Mata Mineira com maior incidência histórica de enchentes. 
+Diante desse cenário, este projeto propõe o desenvolvimento de um modelo preditivo baseado em técnicas de Machine Learning para estimar o risco de ocorrência de eventos de inundação em dez municípios da Zona da Mata Mineira com maior incidência histórica de enchentes.
  
-A modelagem será construída a partir da integração de dados meteorológicos do Instituto Nacional de Meteorologia (INMET), dados hidrológicos da Agência Nacional de Águas e Saneamento Básico (ANA) e registros oficiais de desastres do Sistema Integrado de Informações sobre Desastres (S2ID). 
+A modelagem será construída a partir da integração de dados meteorológicos do Instituto Nacional de Meteorologia (INMET), dados hidrológicos da Agência Nacional de Águas e Saneamento Básico (ANA) e registros oficiais de desastres do Sistema Integrado de Informações sobre Desastres (S2ID).
  
-A abordagem integrada permite modelar a cadeia causal do fenômeno: 
+A abordagem integrada permite modelar a cadeia causal do fenômeno:
  
-Precipitação intensa → Elevação do nível do rio → Registro oficial de desastre 
+Precipitação intensa → Elevação do nível do rio → Registro oficial de desastre
  
 --- 
 
