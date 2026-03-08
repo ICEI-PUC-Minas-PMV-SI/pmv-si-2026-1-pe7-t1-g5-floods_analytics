@@ -240,20 +240,20 @@ Dataset: **[Work Productivity & Burnout Risk Dataset (Kaggle)](https://www.kaggl
 | ``Productivity_Score`` | Numérico | Escala de 1–100 |
 | ``Burnout_Risk`` | Binário | Yes/No |
 
-## Variável Alvo
+# Variável Alvo
 
 ### Burnout_Risk
 Problema de classificação binária:
 Yes → 1
 No → 0
 
-## Volume Estimado
+### Volume Estimado
 O dataset contém 30.000 registros, que são suficientes para: 
 - Divisão treino/validação/teste
 - Aplicação de modelos robustos
 - Análise de generalização 
 
-## ESTRUTURA E TRATAMENTO DOS DADOS
+### Estrutura e Tratamento dos Dados
 
 - Dataset não apresenta valores faltantes.
 - Variáveis categóricas serão codificadas via One-Hot Encoding.
@@ -261,14 +261,14 @@ O dataset contém 30.000 registros, que são suficientes para:
 - Avaliação de balanceamento da classe alvo.
 - Análise de correlação para evitar multicolinearidade excessiva. 
 
-## DESBALANCEAMENTO 
+### Desbalanceamento 
 
 Caso a classe "Yes" seja minoritária:
 - Ajuste de pesos das classes
 - SMOTE
 - Avaliação por Recall e F1 
  
-# Aspectos Éticos e Conformidade com a LGPD 
+### Aspectos Éticos e Conformidade com a LGPD 
 
 O dataset não contém informações pessoais identificáveis, estando em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018). 
 
@@ -290,6 +290,9 @@ Dimensões éticas consideradas:
 O projeto propõe uma abordagem estruturada e metodologicamente sólida para predição de risco de burnout utilizando técnicas modernas de Machine Learning. 
 
 A base de 30.000 registros, com variáveis demográficas, ocupacionais e de saúde, permite análise robusta e aplicação de modelos supervisionados com potencial de generalização.
+
+# Vídeo de apresentação da Etapa 01
+...
 
 # Referências
 1. ADAMOPOULOS, I.; VALAMONTES, A.; TSIRKAS, P.; DOUNIAS, G. Predicting workplace hazard, stress and burnout among public health inspectors: An AI-driven analysis in the context of climate change. *European Journal of Investigation in Health, Psychology and Education*, v. 15, n. 5, p. 65, 2025. DOI: 10.3390/ejihpe15050065. Disponível em: https://doi.org/10.3390/ejihpe15050065. Acesso em: 7 mar. 2026.
