@@ -264,15 +264,7 @@ Dimensões éticas consideradas:
 
 # Canvas Analítico
 
-- **Problema:** Predição supervisionada de risco de burnout.
-- **Stakeholders:** RH, gestores organizacionais, equipes de saúde corporativa.
-- **Dados:** Demográficos + hábitos de trabalho + saúde + produtividade.
-- **Técnicas:** Regressão Logística, Random Forest, XGBoost, SVM.
-- **Métricas:** Accuracy, Precision, Recall, F1-Score, AUC-ROC.
-- **Impacto Esperado:** Apoio à prevenção de esgotamento profissional e promoção de bem-estar.
-
-<img width="1920" height="1080" alt="CanvasAnalitico" src="https://github.com/user-attachments/assets/c984ea6f-9b14-45f8-8051-d128fc2db7ba" />
-
+<img width="1920" height="1080" alt="CanvasAnalitico" src="https://github.com/user-attachments/assets/2fd69fd0-2580-4bbe-912d-db499b40068f" />
 
 # Considerações Finais
 O projeto propõe uma abordagem estruturada e metodologicamente sólida para predição de risco de burnout utilizando técnicas modernas de Machine Learning. 
