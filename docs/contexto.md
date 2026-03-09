@@ -272,7 +272,7 @@ O projeto propõe uma abordagem estruturada e metodologicamente sólida para pre
 A base de 30.000 registros, com variáveis demográficas, ocupacionais e de saúde, permite análise robusta e aplicação de modelos supervisionados com potencial de generalização.
 
 # Vídeo de apresentação da Etapa 01
-...
+[Burnout Analytics - 2026 - ETAPA 1 / Turma 1 - Grupo 5 - Eixo 7 - PUC-MG](https://www.youtube.com/watch?v=VBhUj68cPPU)
 
 # Referências
 1. ADAMOPOULOS, I.; VALAMONTES, A.; TSIRKAS, P.; DOUNIAS, G. Predicting workplace hazard, stress and burnout among public health inspectors: An AI-driven analysis in the context of climate change. *European Journal of Investigation in Health, Psychology and Education*, v. 15, n. 5, p. 65, 2025. DOI: 10.3390/ejihpe15050065. Disponível em: https://doi.org/10.3390/ejihpe15050065. Acesso em: 7 mar. 2026.
