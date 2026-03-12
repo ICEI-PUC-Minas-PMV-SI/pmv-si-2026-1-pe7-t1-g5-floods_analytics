@@ -22,17 +22,15 @@ O problema central consiste em verificar:
  
 ## Objetivo Geral 
 
-Desenvolver e avaliar um modelo preditivo de classificação binária para estimar o risco de burnout em profissionais, utilizando técnicas de aprendizado de máquina supervisionado. 
+Desenvolver e avaliar um modelo preditivo para estimar o risco de burnout em profissionais, utilizando técnicas de aprendizado de máquina supervisionado. 
  
 ## Objetivos Específicos
-- Realizar análise exploratória do dataset; 
-- Avaliar qualidade e consistência dos dados; 
-- Codificar variáveis categóricas; 
-- Verificar correlação entre estresse, produtividade e burnout; 
-- Avaliar balanceamento da variável alvo; 
-- Aplicar algoritmos supervisionados (Regressão Logística, Random Forest, XGBoost); 
+- Identificar fatores associados ao burnout em profissionais, com base em variáveis sociodemográficas, organizacionais e psicológicas presentes nos dados analisados; 
+- Implementar e treinar diferentes algoritmos de aprendizado de máquina para prever o risco de burnout.; 
+- Comparar o desempenho dos modelos preditivos utilizando métricas de avaliação apropriadas (por exemplo, acurácia, precisão, recall e F1-score); 
+- Analisar a importância das variáveis (feature importance) nos modelos finais, identificando quais fatores contribuem mais para a previsão do risco de burnout; 
+- Avaliar a aplicabilidade do modelo como ferramenta de apoio à identificação precoce de risco de burnout em ambientes profissionais; 
 - Avaliar desempenho por métricas como Accuracy, Precision, Recall, F1-Score e AUC-ROC; 
-- Analisar importância das variáveis (feature importance); 
 - Interpretar resultados sob perspectiva organizacional e social. 
 
 ## Justificativa
@@ -205,25 +203,25 @@ Dataset: **[Work Productivity & Burnout Risk Dataset (Kaggle)](https://www.kaggl
 
 ## Estrutura do Dataset
 
-| Variável | Tipo | Descrição |
-|----------|------|-----------|
-| ``Employee_ID`` | Identificador | Código único do funcionário |
-| ``Age`` | Numérico | Idade |
-| ``Gender`` | Categórico | Gênero |
-| ``Country`` | Categórico | País |
-| ``Job_Role`` | Categórico | Cargo |
-| ``Experience_Years`` | Numérico | Anos de experiência |
-| ``Company_Size`` | Categórico | Porte da empresa |
-| ``Work_Hours_Per_Day`` | Numérico | Horas trabalhadas por dia |
-| ``Meetings_Per_Day`` | Numérico | Reuniões diárias |
-| ``Internet_Speed_Mbps`` | Numérico | Velocidade da internet |
-| ``Work_Environment`` | Categórico | Remoto, Híbrido ou Presencial |
-| ``Sleep_Hours`` | Numérico | Horas de sono |
-| ``Exercise_Hours_Per_Week`` | Numérico | Exercício semanal |
-| ``Screen_Time_Hours`` | Numérico | Tempo de tela |
-| ``Stress_Level`` | Numérico | Escala de estresse |
-| ``Productivity_Score`` | Numérico | Escala de 1–100 |
-| ``Burnout_Risk`` | Binário | Yes/No |
+| Variável | Tipo | Descrição | Range |
+|----------|------|-----------|-------|
+| ``Employee_ID`` | Identificador | Código único do funcionário |   |
+| ``Age`` | Numérico | Idade |     |
+| ``Gender`` | Categórico | Gênero |    |
+| ``Country`` | Categórico | País |      |
+| ``Job_Role`` | Categórico | Cargo |    |
+| ``Experience_Years`` | Numérico | Anos de experiência |     | 
+| ``Company_Size`` | Categórico | Porte da empresa |    |
+| ``Work_Hours_Per_Day`` | Numérico | Horas trabalhadas por dia |     | 
+| ``Meetings_Per_Day`` | Numérico | Reuniões diárias |     |
+| ``Internet_Speed_Mbps`` | Numérico | Velocidade da internet |    | 
+| ``Work_Environment`` | Categórico | Remoto, Híbrido ou Presencial |     |
+| ``Sleep_Hours`` | Numérico | Horas de sono |    |
+| ``Exercise_Hours_Per_Week`` | Numérico | Exercício semanal |     | 
+| ``Screen_Time_Hours`` | Numérico | Tempo de tela |     |
+| ``Stress_Level`` | Numérico | Escala de estresse |    |
+| ``Productivity_Score`` | Numérico | Escala de 1–100 |    |
+| ``Burnout_Risk`` | Binário | Yes/No |     |
 
 # Variável Alvo
 
