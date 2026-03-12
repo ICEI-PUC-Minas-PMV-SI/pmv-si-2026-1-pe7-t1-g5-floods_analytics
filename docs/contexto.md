@@ -205,17 +205,17 @@ Dataset: **[Work Productivity & Burnout Risk Dataset (Kaggle)](https://www.kaggl
 
 | Variável | Tipo | Descrição | Range |
 |----------|------|-----------|-------|
-| ``Employee_ID`` | Identificador | Código único do funcionário |   |
-| ``Age`` | Numérico | Idade |     |
-| ``Gender`` | Categórico | Gênero |    |
-| ``Country`` | Categórico | País |      |
-| ``Job_Role`` | Categórico | Cargo |    |
-| ``Experience_Years`` | Numérico | Anos de experiência |     | 
-| ``Company_Size`` | Categórico | Porte da empresa |    |
-| ``Work_Hours_Per_Day`` | Numérico | Horas trabalhadas por dia |     | 
-| ``Meetings_Per_Day`` | Numérico | Reuniões diárias |     |
-| ``Internet_Speed_Mbps`` | Numérico | Velocidade da internet |    | 
-| ``Work_Environment`` | Categórico | Remoto, Híbrido ou Presencial |     |
+| ``Employee_ID`` | Identificador | Código único do funcionário | - |
+| ``Age`` | Numérico | Idade | 22 - 54 anos |
+| ``Gender`` | Categórico | Gênero | Feminino, Masculino e Outro |
+| ``Country`` | Categórico | País | Alemanha, Reino Unido, Austrália, Japão, Estados Unidos |
+| ``Job_Role`` | Categórico | Cargo | Designer, Software Engineer, Marketing, Data Analyst e Software Developer  |
+| ``Experience_Years`` | Numérico | Anos de experiência | 0 - 32 anos    | 
+| ``Company_Size`` | Categórico | Porte da empresa | Pequena, Média, Grande, Multinacional |
+| ``Work_Hours_Per_Day`` | Numérico | Horas trabalhadas por dia | 4 - 10 horas | 
+| ``Meetings_Per_Day`` | Numérico | Reuniões diárias | 0 - 7 |
+| ``Internet_Speed_Mbps`` | Numérico | Velocidade da internet | 10 - 200 mbps | 
+| ``Work_Environment`` | Categórico | Remoto, Híbrido ou Presencial | -   |
 | ``Sleep_Hours`` | Numérico | Horas de sono |    |
 | ``Exercise_Hours_Per_Week`` | Numérico | Exercício semanal |     | 
 | ``Screen_Time_Hours`` | Numérico | Tempo de tela |     |
