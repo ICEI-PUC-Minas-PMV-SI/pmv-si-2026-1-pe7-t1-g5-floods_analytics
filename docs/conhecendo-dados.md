@@ -16,12 +16,6 @@ O dataset analisado contém **30.000 registros e 17 variáveis**, incluindo info
 
 Para realizar a análise exploratória foram utilizadas medidas estatísticas de tendência central (média, mediana e moda), medidas de dispersão (desvio padrão e intervalo interquartil), além de técnicas de visualização de dados, como histogramas, box plots e mapas de calor de correlação.
 
----
-
-## Descrição dos achados
-
-A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a atenção? Foi possível identificar correlação entre os atributos? Que tipo de correlação (forte, fraca, moderada)? 
-
 ## Carregamento e inspeção inicial dos dados
 
 A primeira etapa da análise consistiu em carregar o dataset e inspecionar sua estrutura.
@@ -125,10 +119,117 @@ A análise visual indica alguns valores extremos, como indivíduos que apresenta
 
 Esses casos podem representar perfis com maior vulnerabilidade ao estresse ocupacional.
 
+## Distribuição das variáveis categóricas
 
+A distribuição das variáveis categóricas também foi analisada utilizando gráficos de barras.
+
+``
+sns.countplot(x="Gender", data=df)
+plt.show()
+``
+
+Observou-se uma distribuição relativamente equilibrada entre os gêneros, o que contribui para reduzir possíveis vieses relacionados a essa variável.
+
+Outras variáveis categóricas analisadas incluem:
+
+``Country``
+
+``Job_Role``
+
+``Company_Size``
+
+``Work_Environment``
+
+Essas variáveis permitem analisar possíveis diferenças no risco de burnout entre diferentes contextos organizacionais.
+
+## Distribuição da variável alvo
+
+A variável alvo ``Burnout_Risk`` foi analisada para verificar o balanceamento das classes.
+
+``
+sns.countplot(x="Burnout_Risk", data=df)
+plt.show()
+``
+
+Foi observado que aproximadamente **63% dos registros correspondem à classe "No" e 37% à classe "Yes"**.
+
+Esse resultado indica um leve desbalanceamento, mas ainda dentro de um intervalo aceitável para a aplicação de modelos de classificação.
+
+## Análise de correlação
+
+Para investigar relações entre as variáveis numéricas foi utilizada a correlação de Pearson.
+
+``
+corr = df.corr(numeric_only=True)
+
+plt.figure(figsize=(10,8))
+sns.heatmap(corr, annot=True, cmap="coolwarm")
+plt.show()
+``
+
+A análise do mapa de calor permitiu identificar algumas relações relevantes entre as variáveis do dataset.
+
+Entre as correlações mais relevantes destacam-se:
+
+``Stress_Level`` e ``Burnout_Risk`` apresentam correlação positiva significativa.
+
+``Work_Hours_Per_Day`` e ``Burnout_Risk`` apresentam correlação positiva moderada.
+
+``Sleep_Hours`` e ``Burnout_Risk`` apresentam correlação negativa moderada.
+
+``Exercise_Hours_Per_Week`` e ``Burnout_Risk`` apresentam correlação negativa fraca.
+
+Esses resultados sugerem que níveis elevados de estresse e maior carga de trabalho estão associados ao aumento do risco de burnout, enquanto hábitos saudáveis como atividade física e sono adequado podem atuar como fatores protetivos.
+
+---
+
+# Descrição dos achados
+
+A partir da análise descrita e exploratória realizada, descreva todos os achados considerados relevantes para o contexto em que o trabalho se insere. Por exemplo: com relação à centralidade dos dados algo chamou a atenção? Foi possível identificar correlação entre os atributos? Que tipo de correlação (forte, fraca, moderada)? 
+
+
+## Descrição dos achados
+
+A análise exploratória realizada permitiu identificar diversos padrões relevantes no dataset analisado.
+
+Entre os principais achados destacam-se:
+
+- A média de horas de sono observada no dataset é inferior à recomendação média para adultos, o que pode estar associado ao aumento do estresse ocupacional.
+
+- O tempo médio de exposição a telas é elevado, refletindo a forte digitalização do ambiente de trabalho moderno.
+
+- A análise de correlação indicou que **altos níveis de estresse apresentam forte associação com o risco de burnout**.
+
+- Variáveis relacionadas à carga de trabalho, como número de horas trabalhadas e quantidade de reuniões, apresentam correlação positiva com o risco de burnout.
+
+- Variáveis relacionadas ao estilo de vida saudável, como horas de sono e prática de exercícios físicos, apresentam correlação negativa com o risco de burnout.
+
+Esses resultados são consistentes com a literatura científica discutida na Etapa 1, que aponta fatores como carga de trabalho elevada, privação de sono e estresse crônico como determinantes importantes para o desenvolvimento do burnout ocupacional.
+
+A análise exploratória também mostrou que o dataset possui boa qualidade estrutural, sem valores ausentes e com distribuição relativamente equilibrada entre as classes da variável alvo.
+
+Essas características tornam o conjunto de dados adequado para o treinamento de modelos de aprendizado de máquina supervisionado nas etapas posteriores do projeto.
+
+---
+
+# Ferramentas utilizadas
+
+Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação. Vale destacar que, preferencialmente, as análises deverão ser realizadas utilizando a linguagem de programação Python.
 
 ## Ferramentas utilizadas
 
-Existem muitas ferramentas diferentes que podem ser utilizadas para fazer a análise dos dados. Nesta seção, descreva as ferramentas/tecnologias utilizadas e sua aplicação. Vale destacar que, preferencialmente, as análises deverão ser realizadas utilizando a linguagem de programação Python.
+A análise exploratória foi realizada utilizando a linguagem de programação Python, executada no ambiente Google Colab, que oferece suporte para análise de dados e desenvolvimento de modelos de aprendizado de máquina.
+
+As principais bibliotecas utilizadas foram:
+
+| Ferramenta |	Aplicação |
+|---|---|
+| **Python** |	Linguagem de programação utilizada para análise dos dados |
+| **pandas** |	Manipulação e estruturação de dados em DataFrames |
+| **numpy** |	Operações matemáticas e estatísticas |
+| **matplotlib** |	Criação de gráficos e visualizações |
+| **seaborn** | Visualização estatística avançada |
+
+Essas ferramentas são amplamente utilizadas em projetos de ciência de dados por permitirem análises eficientes, reprodutíveis e escaláveis.
 
 
