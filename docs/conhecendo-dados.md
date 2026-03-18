@@ -79,10 +79,10 @@ Variáveis como ``Screen_Time_Hours`` e ``Productivity_Score`` apresentaram maio
 
 Histogramas foram utilizados para visualizar a distribuição das variáveis numéricas.
 
-``
+```
 df[colsNum].hist(figsize=(12,10))
 plt.show()
-``
+```
 
 A análise das distribuições revelou alguns padrões importantes:
 
@@ -98,11 +98,11 @@ Esses resultados refletem características comuns do ambiente de trabalho contem
 
 Para identificar possíveis valores extremos foram utilizados gráficos de boxplot.
 
-``
+```
 plt.figure(figsize=(12, 6))
 sns.boxplot(data=df[colsNum])
 plt.show()
-``
+```
 
 A análise visual indica alguns valores extremos, como indivíduos que apresentam menos de 5 horas de sono por noite ou mais de 13 horas de exposição a telas.
 
@@ -112,10 +112,10 @@ Esses casos podem representar perfis com maior vulnerabilidade ao estresse ocupa
 
 A distribuição das variáveis categóricas também foi analisada utilizando gráficos de barras.
 
-``
+```
 sns.countplot(x="Gender", data=df)
 plt.show()
-``
+```
 
 Observou-se uma distribuição relativamente equilibrada entre os gêneros, o que contribui para reduzir possíveis vieses relacionados a essa variável.
 
@@ -135,7 +135,7 @@ Essas variáveis permitem analisar possíveis diferenças no risco de burnout en
 
 A variável alvo ``Burnout_Risk`` foi analisada para verificar o balanceamento das classes.
 
-``
+```
 counts = df["Burnout_Risk"].value_counts()
 percent = df["Burnout_Risk"].value_counts(normalize=True) * 100
 
@@ -150,7 +150,7 @@ for i, p in enumerate(ax.patches):
             ha="center")
 
 plt.show()
-``
+```
 
 Foi observado que aproximadamente **80% dos registros correspondem à classe "No" e 20% à classe "Yes"**.
 
@@ -160,13 +160,13 @@ Essa distribuição caracteriza um desbalanceamento moderado significativo, pode
 
 Para investigar relações entre as variáveis numéricas foi utilizada a correlação de Pearson.
 
-``
+```
 cols = ["Burnout_Risk", "Work_Hours_Per_Day", "Stress_Level", "Sleep_Hours", "Exercise_Hours_Per_Week", "Productivity_Score", "Screen_Time_Hours"]
 corr = df[cols].corr()
 
 sns.heatmap(corr, annot=True, cmap="coolwarm")
 plt.show()
-``
+```
 
 A análise do mapa de calor permitiu identificar algumas relações relevantes entre as variáveis do dataset.
 
@@ -222,5 +222,3 @@ As principais bibliotecas utilizadas foram:
 | **seaborn** | Visualização estatística avançada |
 
 Essas ferramentas são amplamente utilizadas em projetos de ciência de dados por permitirem análises eficientes, reprodutíveis e escaláveis.
-
-
