@@ -6,6 +6,8 @@ A análise exploratória de dados (*Exploratory Data Analysis – EDA*) é uma e
 
 O dataset analisado contém **30.000 registros e 17 variáveis**, incluindo informações demográficas, ocupacionais e relacionadas ao estilo de vida dos profissionais analisados. A variável alvo do estudo é **Burnout_Risk**, que indica se o indivíduo apresenta ou não risco de burnout.
 
+O conjunto de dados foi obtido por meio da plataforma Kaggle e, conforme a documentação disponibilizada, trata-se de um dataset gerado por um agente de inteligência artificial. Dessa forma, os dados não refletem percepções subjetivas de respondentes humanos nem estão sujeitos a vieses decorrentes de instrumentos de coleta, interpretação de especialistas ou inconsistências comuns em levantamentos técnicos reais. Por outro lado, essa característica implica que o dataset representa um cenário simulado, o que deve ser considerado na interpretação dos resultados e na generalização das conclusões.
+
 Para realizar a análise exploratória foram utilizadas medidas estatísticas de tendência central (média, mediana e moda), medidas de dispersão (desvio padrão e intervalo interquartil), além de técnicas de visualização de dados, como histogramas, box plots e mapas de calor de correlação.
 
 ## Carregamento e inspeção inicial dos dados
