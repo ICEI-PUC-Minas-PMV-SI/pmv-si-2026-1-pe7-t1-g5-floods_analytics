@@ -60,7 +60,7 @@ O resultado mostrou que não há valores ausentes no dataset, indicando boa qual
 
 Para compreender o comportamento das variáveis numéricas foram calculadas medidas de tendência central e dispersão.
 
-<img width="698" height="290" alt="Screen Shot 2026-03-23 at 21 31 50" src="https://github.com/user-attachments/assets/12561c02-4e99-48da-9565-e80868f05e04" />
+<img width="748" height="294" alt="Screen Shot 2026-03-23 at 22 04 44" src="https://github.com/user-attachments/assets/6a422c19-d1d0-401d-a8d5-e991c047255d" />
 
 ### Interpretação
 
